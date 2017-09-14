@@ -1,0 +1,6 @@
+<app-entry #dataentry></app-entry>
+
+<app-insert-students [messages]="messages"(InsertStudent)="selectMode($event, dataentry.getStudentRecord())"
+(PrintingEnabled)="selectMode($event)"></app-insert-students>
+
+<app-printing [printing]="printing"[studentCollection]="studentCollection"> </app-printing>
